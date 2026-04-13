@@ -1,0 +1,47 @@
+# 1. Ignore EVERYTHING in the root directory
+/*
+
+# 2. Un-ignore the specific folders you need 
+# (We use / at the end so it knows it's a folder)
+!world/
+!world_nether/
+
+# 3. Now, tell Git what to ignore INSIDE those folders
+world/*
+!world/datapacks/
+
+world_nether/*
+!world_nether/paper-world.yml
+
+!plugins/*.jar
+!plugins/AxGraves/config.yml
+!plugins/CombatTag/config.yml
+!plugins/Essentials/config.yml
+!plugins/LuckPerms/yaml-storage/
+!plugins/LuckPerms/config.yml
+!plugins/TAB/config.yml
+!plugins/UltimateTeams/config.yml
+!plugins/WorldEvents/config.yml
+!plugins/WorldEvents/menus.yml
+!plugins/WorldEvents/events/
+
+# 4. Un-ignore specific root files
+!spigot.yml
+!eula.txt
+!server.properties
+!server-icon.png
+!run.bat
+!purpur.yml
+!purpur.jar
+!ops.json
+!bukkit.yml
+!.gitignore
+
+# 5. Specifically block common junk that might bypass rules
+*.log
+*.log.gz
+*.old
+cache/
+libraries/
+versions/
+logs/
