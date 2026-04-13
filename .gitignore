@@ -1,6 +1,6 @@
 # 1. Ignore EVERYTHING in the root directory
 /*
-
+!config/*
 # 2. Un-ignore the specific folders you need 
 # (We use / at the end so it knows it's a folder)
 !world/
@@ -33,7 +33,6 @@ world_nether/*
 !server-icon.png
 !run.bat
 !purpur.yml
-!purpur.jar
 !ops.json
 !bukkit.yml
 !.gitignore
