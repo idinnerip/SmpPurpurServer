@@ -13,8 +13,20 @@ world/*
 world_nether/*
 !world_nether/paper-world.yml
 
-!plugins/*
+plugins/*
+# 2. Inside plugins: ignore everything but allow specific JARs and specific folders
 !plugins/*.jar
+
+# List the folders you want Git to look into
+!plugins/AxGraves/
+!plugins/CombatTag/
+!plugins/Essentials/
+!plugins/LuckPerms/
+!plugins/TAB/
+!plugins/UltimateTeams/
+!plugins/WorldEvents/
+
+# 3. Now un-ignore the specific files inside those folders
 !plugins/AxGraves/config.yml
 !plugins/CombatTag/config.yml
 !plugins/Essentials/config.yml
