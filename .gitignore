@@ -36,6 +36,7 @@ plugins/*
 !plugins/TAB/
 !plugins/UltimateTeams/
 !plugins/WorldEvents/
+!plugins/WorldEdit/
 
 # 5. Clean up: Ignore everything inside those plugin folders by default...
 plugins/AxGraves/*
@@ -45,6 +46,7 @@ plugins/LuckPerms/*
 plugins/TAB/*
 plugins/UltimateTeams/*
 plugins/WorldEvents/*
+plugins/WorldEdit/*
 
 # ...Then specifically un-ignore the files you WANT
 !plugins/AxGraves/config.yml
@@ -58,6 +60,7 @@ plugins/WorldEvents/*
 !plugins/WorldEvents/config.yml
 !plugins/WorldEvents/menus.yml
 !plugins/WorldEvents/events/
+!plugins/WorldEdit/schematics/
 
 # 6. Safety Net for junk
 *.log
