@@ -13,6 +13,7 @@ world/*
 world_nether/*
 !world_nether/paper-world.yml
 
+!plugins/*
 !plugins/*.jar
 !plugins/AxGraves/config.yml
 !plugins/CombatTag/config.yml
