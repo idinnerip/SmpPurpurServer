@@ -1,23 +1,34 @@
-# 1. Ignore EVERYTHING in the root directory
+# 1. Ignore everything in the root
 /*
-!config/*
-# 2. Un-ignore the specific folders you need 
-# (We use / at the end so it knows it's a folder)
-!world/
-!world_nether/
 
-# 3. Now, tell Git what to ignore INSIDE those folders
+# 2. Allow the .gitignore itself and essential root files
+!.gitignore
+!spigot.yml
+!eula.txt
+!server.properties
+!server-icon.png
+!run.bat
+!purpur.yml
+!ops.json
+!bukkit.yml
+!config/
+
+# 3. Handle 'world' folders
+!world/
 world/*
 !world/datapacks/
 
+!world_nether/
 world_nether/*
 !world_nether/paper-world.yml
 
+# 4. Handle 'plugins' folder
+!plugins/
 plugins/*
-# 2. Inside plugins: ignore everything but allow specific JARs and specific folders
+# Allow JARs in the plugins root
 !plugins/*.jar
 
-# List the folders you want Git to look into
+# Allow specific plugin directories
 !plugins/AxGraves/
 !plugins/CombatTag/
 !plugins/Essentials/
@@ -26,7 +37,16 @@ plugins/*
 !plugins/UltimateTeams/
 !plugins/WorldEvents/
 
-# 3. Now un-ignore the specific files inside those folders
+# 5. Clean up: Ignore everything inside those plugin folders by default...
+plugins/AxGraves/*
+plugins/CombatTag/*
+plugins/Essentials/*
+plugins/LuckPerms/*
+plugins/TAB/*
+plugins/UltimateTeams/*
+plugins/WorldEvents/*
+
+# ...Then specifically un-ignore the files you WANT
 !plugins/AxGraves/config.yml
 !plugins/CombatTag/config.yml
 !plugins/Essentials/config.yml
@@ -38,18 +58,7 @@ plugins/*
 !plugins/WorldEvents/menus.yml
 !plugins/WorldEvents/events/
 
-# 4. Un-ignore specific root files
-!spigot.yml
-!eula.txt
-!server.properties
-!server-icon.png
-!run.bat
-!purpur.yml
-!ops.json
-!bukkit.yml
-!.gitignore
-
-# 5. Specifically block common junk that might bypass rules
+# 6. Safety Net for junk
 *.log
 *.log.gz
 *.old
