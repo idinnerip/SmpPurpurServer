@@ -50,6 +50,7 @@ plugins/WorldEvents/*
 !plugins/AxGraves/config.yml
 !plugins/CombatTag/config.yml
 !plugins/Essentials/config.yml
+!plugins/Essentials/motd.txt
 !plugins/LuckPerms/yaml-storage/
 !plugins/LuckPerms/config.yml
 !plugins/TAB/config.yml
