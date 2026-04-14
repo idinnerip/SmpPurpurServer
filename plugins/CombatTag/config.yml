@@ -1,0 +1,35 @@
+# All messages use Adventure's MiniMessage: https://docs.advntr.dev/minimessage/format.html
+# All messages support PlaceholderAPI placeholders
+# Make any message an empty string "" to disable it
+
+# Enable the plugin's features?
+enabled: true
+
+combat-duration: 20.0
+
+# Enabled: if player leaves while in combat, they die and drop their items
+kill-on-quit: false
+
+# Internal placeholder: [otherPlayer]
+combat-tagged-message: "<#cb0000>You are now in combat with [otherPlayer]"
+
+in-combat-action-bar: "<#cb0000>You are in combat! <grey>(<#ffd0a8>%ct_time_left%<grey>)"
+
+combat-expired-message: "<green>You are no longer in combat"
+
+# Enable the command blocker?
+enable-command-blocker: true
+command-blocker:
+  blocked-msg: "<red>You can't run this command while in combat!"
+
+  # Enabled: if command has a colon in (e.g. /plugin:spawn), it will ignore the text before the colon, and only check it as '/spawn'
+  bypass-colons: true
+
+  # Enabled: each whole word must match (e.g., `/warp spawn` will block `/warp spawn` but not `/warp1` or `/warp spawn1`)
+  match-entire-words: true
+
+  blocked-cmds:
+    - "/spawn"
+    - "/home"
+    - "/tpa"
+    - "/tpr"

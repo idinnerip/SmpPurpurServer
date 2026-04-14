@@ -1,0 +1,9 @@
+name: default
+permissions:
+- delhome
+- essentials.tpacancel
+- essentials.tpaccept
+- home
+- sethome
+- tpa
+- tpr

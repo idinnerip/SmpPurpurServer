@@ -1,0 +1,74 @@
+# 1. Ignore everything in the root
+/*
+
+# 2. Allow the .gitignore itself and essential root files
+!.gitignore
+!purpur.jar
+!spigot.yml
+!eula.txt
+!server.properties
+!server-icon.png
+!run.bat
+!purpur.yml
+!ops.json
+!bukkit.yml
+!config/
+
+# 3. Handle 'world' folders
+!world/
+world/*
+!world/datapacks/
+
+!world_nether/
+world_nether/*
+!world_nether/paper-world.yml
+
+# 4. Handle 'plugins' folder
+!plugins/
+plugins/*
+# Allow JARs in the plugins root
+!plugins/*.jar
+
+# Allow specific plugin directories
+!plugins/AxGraves/
+!plugins/CombatTag/
+!plugins/Essentials/
+!plugins/LuckPerms/
+!plugins/TAB/
+!plugins/UltimateTeams/
+!plugins/WorldEvents/
+!plugins/WorldEdit/
+
+# 5. Clean up: Ignore everything inside those plugin folders by default...
+plugins/AxGraves/*
+plugins/CombatTag/*
+plugins/Essentials/*
+plugins/LuckPerms/*
+plugins/TAB/*
+plugins/UltimateTeams/*
+plugins/WorldEvents/*
+plugins/WorldEdit/*
+
+# ...Then specifically un-ignore the files you WANT
+!plugins/AxGraves/config.yml
+!plugins/CombatTag/config.yml
+!plugins/Essentials/config.yml
+!plugins/Essentials/motd.txt
+!plugins/Essentials/kits.yml
+!plugins/LuckPerms/yaml-storage/
+!plugins/LuckPerms/config.yml
+!plugins/TAB/config.yml
+!plugins/UltimateTeams/config.yml
+!plugins/WorldEvents/config.yml
+!plugins/WorldEvents/menus.yml
+!plugins/WorldEvents/events/
+!plugins/WorldEdit/schematics/
+
+# 6. Safety Net for junk
+*.log
+*.log.gz
+*.old
+cache/
+libraries/
+versions/
+logs/
