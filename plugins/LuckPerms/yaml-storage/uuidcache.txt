@@ -1,2 +1,5 @@
 # LuckPerms UUID lookup cache
+<<<<<<< HEAD
 7b400b20-484a-3350-80f7-03c420934cbd:inderip
+=======
+>>>>>>> 54adfe207edb77b14923e43f7cf4ec5c845f29e5

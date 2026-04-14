@@ -54,7 +54,10 @@ plugins/WorldEdit/*
 !plugins/CombatTag/config.yml
 !plugins/Essentials/config.yml
 !plugins/Essentials/motd.txt
+<<<<<<< HEAD
 !plugins/Essentials/kits.yml
+=======
+>>>>>>> 54adfe207edb77b14923e43f7cf4ec5c845f29e5
 !plugins/LuckPerms/yaml-storage/
 !plugins/LuckPerms/config.yml
 !plugins/TAB/config.yml
